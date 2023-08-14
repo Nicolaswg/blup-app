@@ -32,7 +32,7 @@ interface Props {
   btnTitle: string;
 }
 
-function PostThread({ userId }: { userId: string }) {
+const PostThread = ({ userId }: { userId: string }) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -86,6 +86,6 @@ function PostThread({ userId }: { userId: string }) {
       </form>
     </Form>
   );
-}
+};
 
 export default PostThread;
